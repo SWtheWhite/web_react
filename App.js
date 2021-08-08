@@ -62,11 +62,11 @@ class App extends Component {
         var _contents = Array.from(this.state.contents);
         var i = 0;
         while(i<_contents.lenth){
-          if(_content[i].id === _id){
-            _content[i] = {id:_id, title:_title, des:_des};
+          if(_contents[i].id === _id){
+            _contents[i] = {id:_id, title:_title, des:_des};
             break;
           }
-          i=i+1;
+          i = i + 1;
         }
         
         this.setState({
